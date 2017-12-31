@@ -1,2 +1,16 @@
-<%= button_to "ログイン", { :controller => "tweets", :action => "index"}, :method => :get %>
-<%= button_to "新規登録", { :controller => "devise/registrations", :action => "new"}, :method => :get %>
+<!--   Header Start   -->
+<header class="container hello-header">
+  Geeksalon Twitterlike App
+</header>
+<!--   Header End   -->
+
+<!--   Button contaner Start   -->
+<div class="container">
+  <div class="row hello-btn-container">
+    <%= button_to "ログイン", { :controller => "tweets", :action => "index"}, :method => :get, :class => "btn btn-success btn-lg btn-block" %>
+  </div>
+  <div class="row hello-btn-container">
+    <%= button_to "新規登録", { :controller => "devise/registrations", :action => "new"}, :method => :get, :class => "btn btn-warning btn-lg btn-block" %>
+  </div>
+</div>
+<!--   Button container End   -->

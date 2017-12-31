@@ -1,0 +1,96 @@
+.hello-header {
+  /*   background ... 背景画像を設定   */
+  background: url("/assets/home-background.jpg");
+
+  /*   font-family ... 文字のフォントの設定   */
+  /*   font-size ... 文字の大きさの設定(単位はpx(ピクセル))   */
+  font-family: cursive;
+  font-size: 60px;
+
+  /*   height ... headerの縦の長さを設定(単位はpx(ピクセル))   */
+  height: 400px;
+
+  /*   文字を上下左右で中央に揃える3つの魔法の言葉   */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hello-btn-container {
+  /*   margin-top ... 上の余白を設定(単位はpx(ピクセル))   */
+  /*   margin-bottom ... 下の余白を設定(単位はpx(ピクセル))   */
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/*   CSS for /app/views/users/registrations/new.html.erb Start   */
+.sign-in-container {
+  /*   background ... 色を指定(#RGB)で背景色を変更   */
+  background: #333;
+
+  /*   height ... headerの縦の長さを設定(単位はpx(ピクセル))   */
+  height: 750px;
+}
+
+.form-container {
+  /*   background ... 色を指定(#RGB)で背景色を変更   */
+  background: #fff;
+
+  /*   margin-top ... 上の余白を設定(単位はpx(ピクセル))   */
+  margin-top: 200px;
+
+  /*   中身を全て中央ぞろえ   */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*   CSS for /app/views/users/registrations/new.html.erb End   */
+
+/*   CSS for /app/views/users/session/new.html.erb Start   */
+.sign-up-container {
+  /*   background ... 色を指定(#RGB)で背景色を変更   */
+  background: #333;
+
+  /*   height ... headerの縦の長さを設定(単位はpx(ピクセル))   */
+  height: 750px;
+}
+/*   CSS for /app/views/users/session/new.html.erb End   */
+
+/*   CSS for /app/views/tweets/index.html.erb Start   */
+.tweets-header {
+  background: #000;
+  height: 100px;
+  padding-top: 30px;
+}
+
+.tweets-header-title {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.timeline-container {
+  background: #aaa;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.timeline {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.tweet-container {
+  border: solid 1px #999;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.tweet-container:hover {
+  background: #aaf;
+}
+/*   CSS for /app/views/tweets/index.html.erb Start   */

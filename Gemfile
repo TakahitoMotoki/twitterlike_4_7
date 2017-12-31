@@ -54,3 +54,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'devise'
+
+gem 'bootstrap-sass'
+gem 'sprockets-rails'
+gem 'bootstrap', '~> 4.0.0.beta'
+gem 'jquery-rails'
