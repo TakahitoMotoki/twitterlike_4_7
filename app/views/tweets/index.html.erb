@@ -24,6 +24,8 @@
     <div class="col-sm-6 timeline">
       <% @tweets.each do |t| %>
         <div class="tweet-container">
+          <%= t.user.email %>
+          <br>
           <%= t.body %>
           <br>
           <%= t.created_at %>

@@ -15,7 +15,8 @@ class TweetsController < ApplicationController
   #新しいTweetの保存
   def create
     @tweet = Tweet.new(tweet_params)
-
+    #現在のUserのidをTweetのuser_idという部分にセット
+    @tweet.user_id = current_user.id
     #新しいTweetの保存に成功した場合
     if @tweet.save
       #index.html.erbにページが移る
