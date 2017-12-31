@@ -1,4 +1,7 @@
 class TweetsController < ApplicationController
+  #ログインしていなかったら、このコントローラーの全ての機能を使えない
+  before_action :authenticate_user!
+
   #全ての投稿を表示する画面
   def index
     @tweets = Tweet.all
