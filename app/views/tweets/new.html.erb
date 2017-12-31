@@ -1,0 +1,10 @@
+<%= form_for @tweet, :url => {:action => 'create'} do |f| %>
+  <div class="field">
+    <%= f.label :body %>
+    <br>
+    <%= f.text_field :body, size: 140 %>
+  </div>
+  <div class="action">
+    <%= f.submit %>
+  </div>
+<% end %>
