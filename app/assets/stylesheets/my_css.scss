@@ -93,4 +93,16 @@
 .tweet-container:hover {
   background: #aaf;
 }
+
+.mypage-container {
+  background: #fff;
+  border-radius: 10px;
+}
 /*   CSS for /app/views/tweets/index.html.erb Start   */
+
+/*   CSS for /app/views/tweets/mypage.html.erb Start   */
+.btn-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*   CSS for /app/views/tweets/mypage.html.erb End   */

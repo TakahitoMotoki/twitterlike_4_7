@@ -28,6 +28,12 @@ class TweetsController < ApplicationController
     end
   end
 
+  #mypageの表示
+  def mypage
+    #アソシエーションを利用して、現在のユーザーが持っている全てのTweetを取得
+    @tweets = current_user.tweets
+  end
+
   private
   #セキュリティのため、許可した:bodyというデータだけ取ってくるようにする
   def tweet_params

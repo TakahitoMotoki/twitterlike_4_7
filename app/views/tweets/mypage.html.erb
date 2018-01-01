@@ -19,8 +19,13 @@
 <!--   Timeline Start   -->
 <section class="container timeline-container">
   <div class="row">
-    <div class="col-sm-3 mypage-container">
-      <%= button_to "マイページへ", { :controller => "tweets", :action => "mypage"}, :method => :get, :class => "btn btn-warning btn-md" %>
+    <div class="col-sm-3">
+      <div class="col-sm-12 btn-container">
+        <%= button_to "編集する", { :controller => "users/registrations", :action => "edit"}, :method => :get, :class => "btn btn-secondary btn-sm btn-block" %>
+      </div>
+      <div class="col-sm-12 btn-container">
+        <%= button_to "ホームへ", { :controller => "tweets", :action => "index"}, :method => :get, :class => "btn btn-primary btn-sm btn-block" %>
+      </div>
     </div>
     <div class="col-sm-6 timeline">
       <% @tweets.each do |t| %>

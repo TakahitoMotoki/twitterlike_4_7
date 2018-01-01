@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => {
+    :registrations => "users/registrations"
+  }
   root to: "hello#index"
 
   #Tweetの投稿に関するページ
@@ -9,4 +11,6 @@ Rails.application.routes.draw do
   post "/tweets/new" => "tweets#create"
   #投稿一覧
   get "/tweets/index" => "tweets#index"
+  #マイページの表示
+  get "/tweets/mypage" => "tweets#mypage"
 end
