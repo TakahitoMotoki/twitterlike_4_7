@@ -20,16 +20,27 @@
 <section class="container timeline-container">
   <div class="row">
     <div class="col-sm-3 mypage-container">
-      <%= button_to "マイページへ", { :controller => "tweets", :action => "mypage"}, :method => :get, :class => "btn btn-warning btn-md" %>
+      <div class="profile">
+        <%= image_tag(current_user.icon_url, :size => "80x80", :class => "profile-icon") %>
+        <p class="profile-name">
+          <b><%= current_user.name %></b>
+          <br>
+          <%= current_user.email %>
+        </p>
+      </div>
+      <%= button_to "マイページへ", { :controller => "tweets", :action => "mypage"}, :method => :get, :class => "btn btn-warning btn-md btn-block" %>
     </div>
     <div class="col-sm-6 timeline">
       <% @tweets.each do |t| %>
         <div class="tweet-container">
-          <%= t.user.email %>
-          <br>
-          <%= t.body %>
-          <br>
-          <%= t.created_at %>
+          <%= image_tag(t.user.icon_url, :size => "40x40", :class => "icon") %>
+          <p class="tweet-text-container">
+            <b><%= t.user.name %></b>
+            <br>
+            <%= t.body %>
+            <br>
+            <%= t.created_at %>
+          </p>
         </div>
       <% end %>
     </div>

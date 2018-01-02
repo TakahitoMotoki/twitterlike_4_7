@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
 
   #全ての投稿を表示する画面
   def index
-    @tweets = Tweet.all
+    @tweets = Tweet.all.order("id DESC")
   end
 
   #新しいTweetを投稿するときに使う
@@ -31,7 +31,7 @@ class TweetsController < ApplicationController
   #mypageの表示
   def mypage
     #アソシエーションを利用して、現在のユーザーが持っている全てのTweetを取得
-    @tweets = current_user.tweets
+    @tweets = current_user.tweets.order("id DESC")
   end
 
   private

@@ -88,6 +88,15 @@
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.icon {
+  border-radius: 20px;
+  margin-right: 15px;
 }
 
 .tweet-container:hover {
@@ -97,6 +106,23 @@
 .mypage-container {
   background: #fff;
   border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.profile-icon {
+  border-radius: 40px;
+  margin-right: 10px;
 }
 /*   CSS for /app/views/tweets/index.html.erb Start   */
 
